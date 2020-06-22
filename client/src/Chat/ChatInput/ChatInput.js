@@ -27,19 +27,25 @@ const ChatInput = (props) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
-            <label>
-                User
-                <input 
-                    value={user}
-                    onChange={onUserUpdate}/>
-            </label>
-            <label>
-                Message
-                <input 
-                    value={message}
-                    onChange={onMessageUpdate}/>
-            </label>
+        <form 
+            onSubmit={onSubmit}>
+            <label htmlFor="user">User:</label>
+            <br />
+            <input 
+                id="user" 
+                name="user" 
+                value={user}
+                onChange={onUserUpdate} />
+            <br/>
+            <label htmlFor="message">Message:</label>
+            <br />
+            <input 
+                type="text"
+                id="message"
+                name="message" 
+                value={message}
+                onChange={onMessageUpdate} />
+            <br/><br/>
             <button>Submit</button>
         </form>
     )

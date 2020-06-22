@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
-import Chat from './Chat';
+import Chat from './Chat/Chat';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ margin: '0 30%' }}>
       <Chat />
     </div>
   );
